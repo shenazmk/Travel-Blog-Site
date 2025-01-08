@@ -1,0 +1,559 @@
+/* 
+    CSS styles for Login and Signup pages begins
+*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+header h1 {
+    font-size: 64px;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    height: 60px;
+    width: 200px;
+}
+
+#main-center {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+}
+
+#footer-auth {
+    background-color: black;
+    color: white;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.auth-form {
+    margin-top: 60px;
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 2em;
+}
+
+.form-input-grid {
+    display: grid;
+    grid-template-columns: auto 230px;
+
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.form-input-grid input {
+    padding: 5px 5px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.submit {
+    padding: 5px 12px;
+    margin: 10px 0px 5px 0px;
+}
+
+.form-note {
+    text-align: center;
+}
+
+.footer-text {
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+/* CSS styles for Login and Signup pages ends */
+
+/* CSS styles for Before and After Login pages starts */
+
+/* Header */
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Login Section */
+.login-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #0f0d0d;
+    /* Dark gray for contrast against black */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow for depth */
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    /* Gray border */
+    border-radius: 5px;
+    background-color: black;
+    /* Darker input background */
+    color: #fff;
+    /* White input text */
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: gray;
+    /* Blue button to match header */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #005bb5;
+}
+
+.login-form p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Posts Section */
+.posts-section {
+    padding: 20px;
+    max-width: 800px;
+    /* Limit the width of the posts section */
+    margin: 0 auto;
+    /* Center the posts section horizontally */
+}
+
+/* Flex container for avatar, screenname, and date/time */
+.post-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.screenname {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Date and time aligned to the right */
+.date-time {
+    font-size: 15px;
+    color: white;
+    margin-left: auto;
+    /* Pushes date and time to the far right */
+}
+
+/* Post content and link */
+.post-content {
+    margin-top: 10px;
+}
+
+.post-content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.post-content p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.post-content a {
+    font-size: 14px;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+.post {
+    background-color: #333;
+    /* Dark gray post background */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    /* Add left and right margin to add space around posts */
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-image {
+    width: 80%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    border-radius: 8px;
+    max-width: 240px;
+    float: left;
+}
+
+/* CSS styles for Before and After Login pages ends */
+
+/* CSS styles for Blog Post Detail Page begins */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.logo {
+    height: 60px;
+    width: 200px;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+}
+
+.user-area img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #a3a3a3;
+}
+
+.content {
+    grid-column: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+h1 {
+    color: black;
+}
+
+.meta {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.post-image-1 {
+    width: 100%;
+    height: 80vh;
+    border-radius: 8px;
+}
+
+.comments {
+    margin-top: 40px;
+
+}
+
+.comment {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.comment img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.comment h4 {
+    margin: 0;
+}
+
+.comment p {
+    margin: 5px 0;
+    color: #1f1c1c;
+}
+
+.footer-space {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.screenname {
+    font-size: 1em;
+    margin: 0px 10px;
+}
+
+.menu {
+    font-size: 10px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0;
+}
+
+.footer-text {
+    font-size: 20px;
+}
+
+.comment-form {
+    border: 3px solid black;
+    border-radius: 25px;
+    padding: 20px 20px;
+}
+
+.form-input-grid2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.submit {
+    padding: 5px 12px;
+    margin: 10px 0px 5px 0px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+#comment-content {
+    padding: 16px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.votes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.date-time-comment {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 15px;
+    color: black;
+}
+
+/* CSS styles for Blog Post Detail Page ends */
+
+.newpost {
+    padding: 5px 12px;
+    margin: 10px 15px 5px 0px;
+}
+
+textarea {
+    height: 520px;
+    width: 580px;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#title {
+    font-size: 15px;
+    height: 30px;
+    width: 580px;
+}
+
+.date-time-comment-bm {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.comments-bm {
+    margin-top: 40px;
+    color: white;
+}
+
+p.white-font {
+    color: white;
+}
+
+a.white-font{
+    color: white;
+}
+p.header-title {
+    font-size: 25px;
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.post-images {
+
+    width: 80%;
+    max-height: 250px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.write{
+    text-align: center;
+}
+
+/* CSS Styles for Signup Page JS Validation */
+.invalid{
+    border: red 2px solid;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.error{
+    color: red;
+    font-style: italic;
+}
+
+.error p {
+    margin: 0;
+    text-align: right;
+}
+
+.none{
+    display: none;
+}
+
+.highlight{
+    border: 2px solid red;
+
+}
+
+#remaining_chars{
+
+    color: dark grey;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#numOfChar
+{
+    color: dark grey;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+
+
+/* To Do 5b: Add a class style to define the appearance of error messages  */
+
+.highlight_input{
+    color: red;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.4px;
+    margin-bottom: 15px;
+
+}
+
+
+/* To Do 6: Add a class style that sets visibility to hidden if an element has that class  */
+.error-text-hidden{
+    visibility: hidden;
+} 
